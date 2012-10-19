@@ -1,0 +1,17 @@
+INSTALL
+-------
+
+Copy check_inodes in::
+
+    /usr/lib/check_mk_agent/local/
+
+of each server you want to monitor.
+
+On OMD server launch inventory:
+
+    cmk -u -II  [servername]
+
+to discover the new installed plugin.
+Then:
+    
+    cmk -R
